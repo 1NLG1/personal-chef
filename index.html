@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Chef</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/1aacc9b842.js" crossorigin="anonymous"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo" title="back to homepage">
+            <i class="fa-solid fa-utensils"></i>
+        </a>
+        <ul class="social-media">
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a></li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <button class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <section class="slider">
+            <nav class="slider-controls">
+                <a id="previous-slide" href="#" class="slider-arrows slider-prev" title="">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+                <a id="next-slide" href="#" class="slider-arrows slider-next" title="">
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <ol class="slider-picker">
+                    <li class="slider-picker-item">
+                        <a href="#" class="slider-picker-link" title="go to the first image"></a>
+                    </li>
+                    <li class="slider-picker-item">
+                        <a href="#" class="slider-picker-link" title="go to the second image"></a>
+                    </li>
+                    <li class="slider-picker-item">
+                        <a href="#" class="slider-picker-link" title="go to the third image"></a>
+                    </li>
+                </ol>
+            </nav>
+            <ol id="slider-list" class="slider-list">
+                <li class="slider-item Active">
+                    <picture class="slider-image">
+                        <source type="image/webp" srcset="./images/poza-slide-1.webp" media="(min-width: 750px)">
+                        <source type="image/webp" srcset="./images/poza-slide-1-mobile.webp" media="(min-width: 100px)">
+                        <img src="./images/poza-slide-1-mobile.jpg" alt="" width="525" height="300" itemprop="image">
+                    </picture>
+                </li>
+                <li class="slider-item">
+                    <picture class="slider-image">
+                        <source type="image/webp" srcset="./images/poza-slide-2.webp" media="(min-width: 750px)">
+                        <source type="image/webp" srcset="./images/poza-slide-2-mobile.webp" media="(min-width: 100px)">
+                        <img src="./images/poza-slide-2-mobile.jpg" alt="" width="525" height="300" itemprop="image">
+                    </picture>
+                </li>
+                <li class="slider-item">
+                    <picture class="slider-image">
+                        <source type="image/webp" srcset="./images/poza-slide-3.webp" media="(min-width: 750px)">
+                        <source type="image/webp" srcset="./images/poza-slide-3-mobile.webp" media="(min-width: 100px)">
+                        <img src="./images/poza-slide-3-mobile.jpg" alt="" width="525" height="300" itemprop="image">
+                    </picture>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <section class="footer-contact">
+                <h3>CONTACTEAZA-NE</h3>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+40723687615">Marian - 0723 687 615</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:contact@ospatar-eveniment.ro">contact@ospatar-eveniment.ro</a> 
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-additional-info">
+                <h3>UTILE</h3>
+                <ul>
+                    <li>
+                        <a href="#">Ajutor</a>
+                    </li>
+                    <li>
+                        <a href="#">Termeni si Conditii</a>
+                    </li>
+                    <li>
+                        <a href="#">Confidentialitate</a>
+                    </li>
+                </ul>
+            </section>
+        </div> 
+            <section class="footer-end">
+                <ul class="social-media">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>Copyright © 2022 All rights reserved</p>
+            </section>
+    </footer>
+</body>
+</html>
