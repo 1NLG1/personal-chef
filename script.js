@@ -1,3 +1,17 @@
+// MENU BTN
+let $menuBtn = document.getElementById('menu-btn');
+let $sidebar = document.getElementById('sidebar');
+let $page = document.body;
+console.log($page);
+$menuBtn.addEventListener('click', () => {
+    $sidebar.classList.add('display-menu')
+})
+
+// $page.addEventListener('click', () => {
+//     $sidebar.classList.remove('display-menu');
+// })
+
+// SLIDER
 let $previousSlideLink = document.getElementById('previous-slide');
 let $nextSlideLink = document.getElementById('next-slide');
 let currentSlide = 1;
