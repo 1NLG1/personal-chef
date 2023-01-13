@@ -1,15 +1,20 @@
 // MENU BTN
-let $menuBtn = document.getElementById('menu-btn');
+let $menuTriggerBtn = document.getElementById('menu-trigger-btn');
 let $sidebar = document.getElementById('sidebar');
-let $page = document.body;
-console.log($page);
-$menuBtn.addEventListener('click', () => {
-    $sidebar.classList.add('display-menu')
+
+$menuTriggerBtn.addEventListener('click', () => {
+    $menuTriggerBtn.classList.toggle('active');
+    $sidebar.classList.toggle('active');
 })
 
-// $page.addEventListener('click', () => {
-//     $sidebar.classList.remove('display-menu');
-// })
+document.addEventListener('click', function(e) {
+    if (e.target.id !== 'sidebar' && e.target.id !== 'menu-trigger-btn') {
+        $menuTriggerBtn.classList.remove('active');
+        $sidebar.classList.remove('active');
+    }
+})
+
+// above solution works well only if you make the button with css not favicon.
 
 // SLIDER
 let $previousSlideLink = document.getElementById('previous-slide');

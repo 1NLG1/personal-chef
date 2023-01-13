@@ -11,47 +11,51 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo" title="back to homepage">
+        <a href="./index.html" class="logo" title="back to homepage">
             <i class="fa-solid fa-utensils"></i>
         </a>
-        <ul class="social-media">
-            <li class="youtube">
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a></li>
-            <li class="facebook">
-                <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </li>
-            <li class="instagram">
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <button class="menu" id="menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </li>
-        </ul>
+        <div class="links">
+            <ul class="social-media">
+                <li class="youtube">
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></li>
+                <li class="facebook">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="instagram">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-trigger-btn" id="menu-trigger-btn"></div>
+        </div>
     </header>
     <aside class="sidebar" id="sidebar">
-        <ul class="menu-sidebar">
-            <li>DESPRE NOI</li>
-            <li>SERVICII</li>
-            <li>CONTACT</li>
+        <ul>
+            <li>
+                <a href="./pages/about.html">DESPRE NOI</a> 
+            </li>
+            <li>
+                <a href="#">SERVICII</a> 
+            </li>
+            <li>
+                <a href="#">CONTACT</a> 
+            </li>
         </ul>
     </aside>
     <main class="main">
         <section class="slider">
             <nav class="slider-controls">
-                <a id="previous-slide" href="#" class="slider-arrows slider-prev" title="">
+                <button id="previous-slide" class="slider-arrows slider-prev" title="">
                     <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <a id="next-slide" href="#" class="slider-arrows slider-next" title="">
+                </button> 
+                <button id="next-slide" href="#" class="slider-arrows slider-next" title="">
                     <i class="fa-solid fa-angle-right"></i>
-                </a>
+                </button>
                 <!-- <ol class="slider-picker">
                     <li class="slider-picker-item">
                         <a href="#" class="slider-picker-link" title="go to the first image"></a>
