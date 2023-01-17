@@ -63,20 +63,23 @@ to {
             @media (max-width: 500px) { height: 300px; }
           }
 .footer { background-color: #222222;}
-  .footer .container { padding: 40px 20px 0; }
-  .footer h3 { margin-bottom: 30px; }
-  .footer ul { margin-bottom: 50px; }
-  .footer li { margin-bottom: 15px; }
-      .footer-contact {  }
-        .footer-contact h3 { color: #fff; }
-        .footer-contact ul { list-style: none; }
-          .footer-contact i { color: #999999; font-size: 16px; width: 20px;}
-          .footer-contact a { color: #666666; text-decoration: none; font-size: 17px;}
-      .footer-additional-info {  }
-        .footer-additional-info h3 { color: #fff; }
-        .footer-additional-info ul{ list-style: none; }
-        .footer-additional-info a { text-decoration: none; color: #666666; font-size: 17px;}
-      .footer-end { background-color: #fff; color: #999999; padding: 25px 20px;} 
-        .footer-end ul { margin: 0; list-style: none; }
-        .footer-end .youtube { padding-left: 0; }
-        .footer-end a { color: #666666; }         
+  .footer .container { padding: 40px 20px 0; display: flex; flex-wrap: wrap;}
+    .footer h3 { margin-bottom: 30px; color: #fff; }
+    .footer ul { margin-bottom: 50px; list-style: none; }
+      .footer li { margin-bottom: 15px; }
+        .footer a { text-decoration: none; color: #666666; font-size: 17px;
+    &:hover { color: #EE4B5A; }
+    }
+    .footer-contact {  }
+    .footer-additional-info { }
+    .footer-additional-info2 { }
+      .f-column { font-size: 18px; padding-left: 15px; padding-right: 15px;
+        @media (min-width: 498px) { flex: 0 0 50%; max-width: 50%; }
+        @media (min-width: 726px) { flex: 0 0 33.33333%; max-width: 33.333333%;}
+        @media (max-width: 497px) { flex: 0 1 auto; width: 100%; }
+  
+      }
+        .footer-contact i { color: #999999; font-size: 16px; width: 20px;}
+  .footer-end { background-image: url(../images/pattern.png); color: #999999; padding: 25px 20px;} 
+    .footer-end ul { margin-bottom: 0; }
+      .footer-end .youtube { padding-left: 0; }
